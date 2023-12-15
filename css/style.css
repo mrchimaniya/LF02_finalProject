@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: brown;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: skyblue;
+    position: relative;
+}
+
+#main h1{
+    font-size: 100px;
+    background-image: url("../images/fullImage1.avif");
+    background-position: center;
+    background-size: cover;
+
+    /* This is important code */
+    background-clip: text;
+    -webkit-background-clip: text; 
+    color: transparent;
+}
+
