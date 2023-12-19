@@ -1,3 +1,14 @@
+@font-face {
+    font-family: 'austinLight';
+    src: url(../font/Austin-Light-Web.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'austinItalic';
+    src: url(../font/Austin-LightItalic-Web.ttf);
+}
+  
+
 *{
     margin: 0;
     padding: 0;
@@ -10,14 +21,23 @@ html,body{
     font-family: gilroy;
 }
 
+#main{
+   background-color: #d2d2c2;
+   /* copy from website */
+   background-image: linear-gradient(to left,transparent 1px,transparent calc((88vw - 4px)/ 14 - 1px),rgba(255,255,255,.6) calc((88vw - 4px)/ 14 - 1px),rgba(255,255,255,.6) calc((88vw - 4px)/ 14)),linear-gradient(to left,transparent 1px,transparent calc((88vw - 4px)/ 14 - 1px),rgba(255,255,255,.6) calc((88vw - 4px)/ 14 - 1px),rgba(255,255,255,.6) calc((88vw - 4px)/ 14));
+   background-size: calc((88vw - 4px)/ 14) 100%,calc((88vw - 4px)/ 14) 93%;
+   background-position-x: calc((88vw - 4px)/ 14 / 2),calc((88vw - 4px)/ 14);
+}
+
 
 /* Nav Bar Started */
 #nav{
     width: 100%;
     height: 12vh;
-    background-color: #d2d2c2;
+    height:100px;
+    background-color: transparent;
     position: fixed;
-    z-index: 999;
+    z-index: 9999;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -33,6 +53,7 @@ html,body{
     align-items: center;
     justify-content: center;
     transition: all ease 0.5s;
+    z-index: 9999999999;
 }
 
 #navPart1 h3{
@@ -51,6 +72,7 @@ html,body{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    z-index: 9999;
 }
 
 #navPart2 *{
@@ -95,7 +117,7 @@ html,body{
     height: 100%;
     width: 100%;
     z-index: 999;
-    transition: all ease 0.8s;
+    transition: all ease 1s;
     left: 0;
     bottom: -140%;
 }
@@ -117,3 +139,88 @@ html,body{
 }
 
 
+/* Page 1 Started */
+#page1{
+   width: 100%;
+   min-height: 100vh;
+   position: relative;
+   background-color: transparent;
+   padding: 1px; /*this is provides because of platform div */
+}
+
+#page1 h1{
+    font-family: austinLight;
+    font-size: 13vw;
+    line-height: 11vw;
+    font-weight: 100;
+    position: absolute;
+    left: 50.5vw;
+    top: 45vh;
+    transform: translate(-50%,-50%);
+    z-index: 999;
+}
+
+#page1 img{
+    position: absolute;
+    top: 14%;
+    left: 50%;
+    transform: translate(-50%,0);
+    z-index: 99;
+    height: 40vw;
+    width: 40vw;
+}
+
+#page1 #platform{
+     width:90vw;
+     height:44vw;
+     background-color: #F5F5EB;
+     /* position: absolute;  because it doesn't extend the parent width*/ 
+     margin-left: 50%;
+     transform: translate(-50%,0);
+     margin-top: 90vh;
+     border-bottom-left-radius: 9999px;
+     border-bottom-right-radius: 9999px;
+}
+
+#page1 #platform h1{
+    font-family: austinLight;
+    font-size: 5.2vw;
+    letter-spacing: 0.01vw;
+    line-height: 5.5vw;
+    text-align: center;
+    width: 53%;
+    font-weight: 100;
+    margin-left: -4%;
+}
+
+#page1 #platform h1 span{
+    font-family: austinItalic;
+    position: relative;
+}
+
+#page1 #platform h1 span:nth-child(1)::before{
+    content: "";
+    position: absolute;
+    height: 1.2vh;
+    width: 100%;
+    bottom: -10%;
+    background-image: url(../images/underline.svg);
+    background-position: center;
+    background-size: cover;
+}
+
+#page1 #platform h1 span:nth-child(2)::before{
+    /* font-family: austinItalic;
+    border-bottom: 0.3vw solid #7AA74A; */
+    /* or */
+    content: "";
+    position: absolute;
+    height: 0.7vh;
+    width: 100%;
+    bottom: 8%;
+    background-color: #7AA74A;
+}
+
+
+
+/* Page 2 Started */
