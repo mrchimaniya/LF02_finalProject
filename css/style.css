@@ -449,9 +449,12 @@ body{
  #page3Elem1:hover img {
      color: #51733F;
      scale:1;
-     position: relative;
-     transform: translateY(3px);
  } 
+ #page3Elem1:hover h1, #page3Elem1:hover h3{
+    position: relative;
+    transform: translateY(3px);
+ }
+
 
  #page3Elem2:hover,
  #page3Elem2:hover h1,
@@ -459,9 +462,12 @@ body{
  #page3Elem2:hover img {
      color: #51733F;
      scale:1;
-     position: relative;
-     transform: translateY(3px);
  } 
+ #page3Elem2:hover h1, #page3Elem2:hover h3{
+    position: relative;
+    transform: translateY(3px);
+ }
+
 
  #page3Elem3:hover,
  #page3Elem3:hover h1,
@@ -469,9 +475,12 @@ body{
  #page3Elem3:hover img {
      color: #51733F;
      scale:1;
-     position: relative;
-     transform: translateY(3px);
  } 
+ #page3Elem3:hover h1, #page3Elem3:hover h3{
+    position: relative;
+    transform: translateY(3px);
+ }
+
 
  #page3Elem4:hover,
  #page3Elem4:hover h1,
@@ -479,9 +488,12 @@ body{
  #page3Elem4:hover img {
      color: #51733F;
      scale:1;
-     position: relative;
-     transform: translateY(3px);
  } 
+ #page3Elem4:hover h1, #page3Elem4:hover h3{
+    position: relative;
+    transform: translateY(3px);
+ }
+
 
  #page3Elem5:hover,
  #page3Elem5:hover h1,
@@ -489,16 +501,22 @@ body{
  #page3Elem5:hover img {
      color: #51733F;
      scale:1;
-     position: relative;
-     transform: translateY(3px);
  } 
+ #page3Elem5:hover h1, #page3Elem5:hover h3{
+    position: relative;
+    transform: translateY(3px);
+ }
 
+ 
  #page3Elem6:hover,
  #page3Elem6:hover h1,
  #page3Elem6:hover h3,
  #page3Elem6:hover img {
      color: #51733F;
      scale:1;
-     position: relative;
-     transform: translateY(3px);
  } 
+ #page3Elem6:hover h1, #page3Elem6:hover h3{
+    position: relative;
+    transform: translateY(3px);
+ }
+
