@@ -7,6 +7,11 @@
     font-family: 'austinItalic';
     src: url(../font/Austin-LightItalic-Web.ttf);
 }
+
+@font-face {
+    font-family: vanguardCustom;
+    src: url(../font/vanguardcf-font/VanguardCF-Light.otf);
+}
   
 
 *{
@@ -347,3 +352,153 @@ body{
     width: 100%;
     margin-top: -8%;
  }
+
+
+
+ /* Page 3 Started */
+#page3{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;  
+    padding: 1px;
+    padding-top: 37vh;
+    padding-bottom: 40vh;
+ }
+
+ #page3>h2{
+    font-size: 3vw;
+    text-align: center;
+    font-family: austinLight;
+    font-weight: 100;
+    margin-top: 35vh;
+ }
+
+ #page3Elems{
+    position: relative;
+ }
+
+ #page3Elems:hover h1, #page3Elems:hover h3{
+    color: grey;
+ }
+
+ .page3ElemCommonClass{
+    transition: all ease 0.4s;
+    z-index: 9;
+    cursor: pointer;
+}
+
+
+ .page3ElemCommonClass>h1{
+    font-size: 7vw;
+    text-align: center;
+    font-family: austinLight;
+    font-weight: 300;
+    margin-top: 8vh;
+    position: relative;
+ }
+
+ .page3ElemCommonClass>h3{
+    font-size: 1.3vw;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    position: relative;
+ }
+
+ .page3ElemCommonClass>img{
+    width: 45vw;
+    height: 45vw;
+    position: absolute;
+    scale: 0;
+    transition: all linear 0.4s;
+    transition-delay: 0.2s;
+ }
+
+#page3Elem1>img {
+    margin-left: -15%;
+    margin-top: -20%;
+}
+
+#page3Elem2>img{
+    margin-left: 50%;
+    margin-top: -30%;
+ }
+
+ #page3Elems #page3Elem3>img{
+    margin-left: -10%;
+    margin-top: -20%;
+ }
+
+ #page3Elems #page3Elem4>img{
+    margin-top: -15%;
+ }
+
+ #page3Elems #page3Elem5>img{
+    margin-top: -37%;
+    margin-left: 60%;
+ }
+
+ #page3Elems #page3Elem6>img{
+    margin-top: -36%;
+    margin-left: 65%;
+ }
+
+ #page3Elem1:hover,
+ #page3Elem1:hover h1,
+ #page3Elem1:hover h3,
+ #page3Elem1:hover img {
+     color: #51733F;
+     scale:1;
+     position: relative;
+     transform: translateY(3px);
+ } 
+
+ #page3Elem2:hover,
+ #page3Elem2:hover h1,
+ #page3Elem2:hover h3,
+ #page3Elem2:hover img {
+     color: #51733F;
+     scale:1;
+     position: relative;
+     transform: translateY(3px);
+ } 
+
+ #page3Elem3:hover,
+ #page3Elem3:hover h1,
+ #page3Elem3:hover h3,
+ #page3Elem3:hover img {
+     color: #51733F;
+     scale:1;
+     position: relative;
+     transform: translateY(3px);
+ } 
+
+ #page3Elem4:hover,
+ #page3Elem4:hover h1,
+ #page3Elem4:hover h3,
+ #page3Elem4:hover img {
+     color: #51733F;
+     scale:1;
+     position: relative;
+     transform: translateY(3px);
+ } 
+
+ #page3Elem5:hover,
+ #page3Elem5:hover h1,
+ #page3Elem5:hover h3,
+ #page3Elem5:hover img {
+     color: #51733F;
+     scale:1;
+     position: relative;
+     transform: translateY(3px);
+ } 
+
+ #page3Elem6:hover,
+ #page3Elem6:hover h1,
+ #page3Elem6:hover h3,
+ #page3Elem6:hover img {
+     color: #51733F;
+     scale:1;
+     position: relative;
+     transform: translateY(3px);
+ } 
