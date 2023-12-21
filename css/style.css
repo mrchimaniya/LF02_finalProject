@@ -21,6 +21,10 @@ html,body{
     font-family: gilroy;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 #main{
    background-color: #d2d2c2;
    /* copy from website */
@@ -37,7 +41,7 @@ html,body{
     height:100px;
     background-color: transparent;
     position: fixed;
-    z-index: 9999;
+    z-index: 999999;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -53,7 +57,6 @@ html,body{
     align-items: center;
     justify-content: center;
     transition: all ease 0.5s;
-    z-index: 9999999999;
 }
 
 #navPart1 h3{
@@ -72,7 +75,6 @@ html,body{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    z-index: 9999;
 }
 
 #navPart2 *{
@@ -116,7 +118,6 @@ html,body{
     border-radius: 30px;
     height: 100%;
     width: 100%;
-    z-index: 999;
     transition: all ease 1s;
     left: 0;
     bottom: -140%;
@@ -148,26 +149,51 @@ html,body{
    padding: 1px; /*this is provides because of platform div */
 }
 
-#page1 h1{
+#page1>h1{
     font-family: austinLight;
     font-size: 13vw;
     line-height: 11vw;
     font-weight: 100;
     position: absolute;
-    left: 50.5vw;
-    top: 45vh;
+    left: 35vw;
+    top: 33vh;
     transform: translate(-50%,-50%);
-    z-index: 999;
+    z-index: 9999;
 }
 
-#page1 img{
+#page1>h1:nth-child(2){
+    font-family: austinLight;
+    font-size: 13vw;
+    line-height: 10vw;
+    font-weight: 100;
     position: absolute;
-    top: 14%;
-    left: 50%;
-    transform: translate(-50%,0);
-    z-index: 99;
-    height: 40vw;
-    width: 40vw;
+    width: 50vw;
+    left: 63vw;
+    top: 56vh;
+    transform: translate(-50%,-50%);
+    z-index: 9999;
+}
+
+#platform h1{
+    font-family: austinLight;
+    font-size: 13vw;
+    line-height: 11vw;
+    font-weight: 100;
+    position: absolute;
+    left: 53.5vw;
+    top: 43vh;
+    transform: translate(-50%,-50%);
+    z-index: 9999;
+}
+
+#page1 #gola{
+    position: absolute;
+    top: 15%;
+    left: 33%;
+    /* transform: translate(-50%,0); */
+    z-index: 999;
+    height: 36vw;
+    width: 36vw;
 }
 
 #page1 #platform{
@@ -175,9 +201,12 @@ html,body{
      height:44vw;
      background-color: #F5F5EB;
      /* position: absolute;  because it doesn't extend the parent width*/ 
-     margin-left: 50%;
-     transform: translate(-50%,0);
+     margin-left: 4.5%;
+     /* transform: translate(-50%,0); */
+     transform-origin: 50% 0;
      margin-top: 90vh;
+     position: relative;
+     z-index: 99;
      border-bottom-left-radius: 9999px;
      border-bottom-right-radius: 9999px;
 }
@@ -224,3 +253,97 @@ html,body{
 
 
 /* Page 2 Started */
+#page2{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;  
+    padding: 1px;
+ }
+
+ #page2-in{
+    width: 84vw;
+    height: 206vh;
+    background-color: #ECEDDE;
+    position: relative;
+    margin-top: -80vh;
+    border-top-left-radius: 9999px;
+    border-top-right-radius: 9999px;
+    margin-left: 8vw;
+    padding-left: 8%;
+    padding-right: 12%;
+    padding-top: 45%;
+ }
+
+ #page2-in h1{
+    font-family: austinLight;
+    font-size: 5.5vw;
+    overflow: hidden;
+    opacity: 0;
+ }
+
+ #page2-in h1 span{
+    font-style: italic;
+ }
+
+ #page2-in-elems{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 5%;
+ }
+
+ #page2-in-elems h2{
+    font-family: austinLight;
+    font-size: 2.8vw;
+    color: #51733F;
+    border: 1px solid #51733F;
+    padding: 1vh 1vw;
+    border-radius: 30px;
+ }
+
+ #page2-in-elems p{
+    width: 48%;
+    font-size: 1.4vw;
+ }
+
+
+ #snake-circle{
+    height: 80vh;
+    width: 80vh;
+    background-color: #B1C0A0;
+    position: absolute;
+    left: 50%;
+    bottom: -38%;
+    border-radius: 50%;
+    transform: translate(-50%,-50%);
+ }
+
+ #snake-circle video{
+    height: 60vh;
+    width: 35vw;
+    margin-top: -10%;
+    margin-left: -50%;
+    rotate: -8deg;
+    position: absolute;
+ }
+
+ #snake-circle img{
+    height: 28vh;
+    width: 20vw;
+    rotate:12deg;
+    position: absolute;
+    top:0;
+    right: -10%;
+
+ }
+
+ .snake__snake *{
+    font-family: austinLight;
+    font-size: 0.2vw;
+ }
+
+ .snake__snake{
+    height: 135%;
+    width: 100%;
+    margin-top: -8%;
+ }

@@ -6,6 +6,7 @@
     <!-- <title>Olha Uzhykova. Design Director | UI/UX Consultant | Mentor</title> -->
     <title>document</title>
     <link rel="shortcut icon" href="./images/favicon_io/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css">
 </head>
@@ -26,14 +27,46 @@
     </div>
     <div id="main">
         <div id="page1">
-            <h1>Olha<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Uzhykova</h1>   
-            <img src="./images/big-greenCircle.png" alt="">
+            <h1>Olha</h1>
+            <h1>Uzhykova</h1>   
+            <img id="gola" src="./images/big-greenCircle.png" alt="">
             <div id="platform">
                 <h1>At the heart of <span>Design</span> is an opportunity to problem <span>solve</span>.</h1>
             </div>
         </div>
+
+        <div id="page2">
+            <div id="page2-in">
+                <h1>Hi there, I'm Olha.</h1>
+                <div id="page2-in-elems">
+                        <h2>Also Olga, or Olka</h2>
+                        <p>An LA-based award-winning design director and UI/UX design expert with 10 years of experience in design and management.
+                            <br><br>
+                            I am a mom to a beautiful 2 y.o. daughter who already loves attending business meetings with me. Also, a big part of my life is Noomo- a design agency which I run together with my husband.</p>
+                </div>
+
+                <div id="snake-circle">
+                    <video autoplay loop muted src="./video/movingFace.mp4"></video>
+                    <img src="./images/girl.jpg" alt="">
+                    <svg class="snake__snake" viewBox="0 0 46 80">
+                        <path class="snake__railway" id="mypath" fill="none" d="M39 69c-2-1-9-2-16-1-12 2-20-1-18-8 2-8 14-5 19-3 6 2 16 4 18-2 2-4-1-7-3-8s-9-2-14-1c-5 2-7 3-11 3-4 1-11-1-12-6 0-6 5-8 12-8 12 2 27 6 27-4 0-11-11-8-25-4-7 1-15-1-15-8 0-6 5-7 10-6 8 1 9 3 13 4 9 1 16-3 16-9 0-7-8-8-15-7L13 2 4 1"></path>
+                        <text class="snake__text" width="100%">
+                            <textPath class="snake__text-path" dominant-baseline="central" xlink:href="#mypath" fill="black" startOffset="0%">AT THE HEART OF DESIGN IS AN OPPORTUNITY TO PROBLEM SOLVE AT THE HEART OF DESIGN IS AN OPPORTUNITY TO PROBLEM SOLVE 
+                                AT THE HEART OF DESIGN IS AN OPPORTUNITY TO PROBLEM SOLVE AT THE HEART OF DESIGN IS AN OPPORTUNITY TO PROBLEM SOLVE 
+                            </textPath>
+                        </text>
+                    </svg>
+                </div>
+            </div>
+        </div>
     </div>
     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js" integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js" integrity="sha512-OzC82YiH3UmMMs6Ydd9f2i7mS+UFL5f977iIoJ6oy07AJT+ePds9QOEtqXztSH29Nzua59fYS36knmMcv79GOg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.6.1/jquery.lettering.min.js" integrity="sha512-VJ/iYbiu1eJ6yLimfTi65t2R9TFcG5D9X8ZCfbbEFhTfPnKJh8byoKXEawi5ScJZBYL1eiirL1+MczZDx0Tz9Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/textillate@0.4.1/jquery.textillate.js"></script>
+ 
     <script src="./js/script.js"></script>
 </body>
 </html>
