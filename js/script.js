@@ -38,6 +38,17 @@ var tl=gsap.timeline({
     }
 });
 
+var t2=gsap.timeline({
+    scrollTrigger:{
+        trigger:"#page1",
+        scroller:"body",
+        markers:true,
+        start:"top -560%",
+        end:"top -620%",
+        scrub:2,
+    }
+});
+
 // here 3 parameter in timeline anim1 is used to tell that we will move timeline in sync
 tl.to("#gola",{
     left:"110%",
@@ -81,3 +92,7 @@ function runSnake(){
         a=0;
     }
 }
+
+t2.to("#whiteCircle",{
+    scale:10,
+},"anim1")

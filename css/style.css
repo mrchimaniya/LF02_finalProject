@@ -362,7 +362,7 @@ body{
     position: relative;  
     padding: 1px;
     padding-top: 37vh;
-    padding-bottom: 40vh;
+    padding-bottom: 10vh;
  }
 
  #page3>h2{
@@ -520,3 +520,92 @@ body{
     transform: translateY(3px);
  }
 
+
+
+  /* Page 4 Started */
+#page4{
+    width: 100%;
+    min-height: 200vh;
+    position: relative;  
+    padding: 1px;
+    padding-left: 15vw;
+    padding-top: 15vh;
+    overflow: hidden;
+ }
+
+ #page4 h1{
+    font-family: austinItalic;
+    font-size: 7vw;
+    font-weight: 300;
+    margin-bottom: 5vh;
+    position: relative;
+    z-index: 9;
+ }
+
+ #page4>p{
+    width: 32vw;
+    display: inline-flex;
+    margin-right: 3vw;
+    font-size: 1.3vw;
+    position: relative;
+    z-index: 9;
+ }
+
+ .page4Elems h2{
+    font-weight: 400;
+ }
+
+ .page4Elems h3{
+    font-size: 30px;
+    font-weight: 200;
+    letter-spacing: -0.7px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgba(0, 0, 0, 0.838);
+ }
+
+ #page4Elem1{
+    width: 350px;
+    position: absolute;
+    left: 48%;
+    top:37%;
+    rotate:2deg;
+ }
+
+ #page4Elem2{
+    width: 320px;
+    position: absolute;
+    top:54%;
+    rotate:-2deg;
+ }
+
+ #page4Elem3{
+    width: 330px;
+    position: absolute;
+    top:68%;
+    left:60%;
+ }
+
+ #page4Elem1 img{
+    width: 100%;
+    height: 250px;
+ }
+
+ #page4Elem2 img{
+    width: 100%;
+    height: 400px;
+ }
+
+ #page4Elem3 img{
+    width: 100%;
+    height: 230px;
+ }
+
+ #page4 #whiteCircle{
+    height: 300px;
+    width: 300px;
+    background-color: rgb(240, 233, 233);
+    position: absolute;
+    border-radius: 50%;
+    top:38%;
+    left:43%;
+ }
