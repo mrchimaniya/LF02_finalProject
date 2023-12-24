@@ -97,6 +97,12 @@ t2.to("#whiteCircle",{
     scale:10,
 },"anim1")
 
+t2.to("#page6 h1",{
+    delay:10,
+    onStart:function(){
+        $('#page6 h1').textillate({ in: { effect: 'fadeInUp' } });
+    }
+},"anim1")
 
 var floatingImagesDiv=document.querySelectorAll(".page5RightElem");
 floatingImagesDiv.forEach((elem)=>{

@@ -603,7 +603,7 @@ body{
  #page4 #whiteCircle{
     height: 300px;
     width: 300px;
-    background-color: rgb(240, 233, 233);
+    background-color: #F5F5EB;
     position: absolute;
     border-radius: 50%;
     top:38%;
@@ -695,3 +695,106 @@ body{
     border: 2px solid black;
     border-radius: 25px;
  }
+
+/* Page 6 Started */
+#page6{
+    width: 100%;
+    min-height: 150vh;
+    position: relative; 
+    overflow: hidden; 
+}
+
+#page6 h1{
+    font-size: 6vw;
+    font-family: austinLight;
+    font-weight: 300;
+    padding-left: 14vw;
+    padding-top: 16vh;
+    overflow: hidden;
+    margin-bottom: -18vh;
+}
+
+#page6 #bigCircle{
+    height: 600px;
+    width: 600px;
+    position: absolute;
+    background-image: url(../images/63.webp);
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+    left: 35%;
+    top:40%;
+}
+
+#page6 .smallCircles{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: #F5F5EB;
+    border: 1px solid black;
+    object-fit: cover;
+    object-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 30px;
+    position: absolute;
+    overflow: hidden;
+}
+
+.smallCircles img{
+    position: relative;
+    z-index: 99;
+    width: 100%;
+    transition: all ease-in 0.5s;
+}
+
+
+#page6 .smallCircles #smallCircleBlackInner{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    transform-origin: 50% 100%;
+    scale: 0;
+    transition: all ease-out 0.7s;
+    border-radius: 50%;
+    z-index: 9;
+}
+
+#page6 .smallCircles:hover img{
+    filter: invert(1);
+}
+
+#page6 .smallCircles:hover #smallCircleBlackInner{
+    scale: 2;
+}
+
+#page6 #smallCircle1{
+    top: 55%;
+    left: 10%;
+}
+
+#page6 #smallCircle2{
+    top: 68%;
+    left: 19.1%;
+}
+
+#page6 #smallCircle3{
+    top: 75%;
+}
+
+#page6 #smallCircle4{
+    top: 30%;
+    left: 70%;
+}
+
+#page6 #smallCircle5{
+    top: 38%;
+    left: 84%;
+}
+
+#page6 #smallCircle6{
+    top: 60%;
+    left: 78%;
+}
