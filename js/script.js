@@ -96,3 +96,19 @@ function runSnake(){
 t2.to("#whiteCircle",{
     scale:10,
 },"anim1")
+
+
+var floatingImagesDiv=document.querySelectorAll(".page5RightElem");
+floatingImagesDiv.forEach((elem)=>{
+    elem.addEventListener("mouseenter",()=>{
+       elem.childNodes[7].style.opacity=1;
+    });
+    elem.addEventListener("mouseleave",()=>{
+        elem.childNodes[7].style.opacity=0;
+    });
+    elem.addEventListener("mousemove",(dets)=>{
+        console.log(dets)
+        elem.childNodes[7].style.left=`${dets.x/40}%`;
+        // elem.childNodes[7].style.top=`${dets.y}px`;
+    });
+})

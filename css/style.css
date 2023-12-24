@@ -609,3 +609,89 @@ body{
     top:38%;
     left:43%;
  }
+
+  /* Page 5 Started */
+  #page5{
+    width: 100%;
+    min-height: 150vh;
+    position: relative; 
+    overflow: hidden; 
+ }
+
+ #page5-background{
+    height: 150vh;
+    width: 88%;
+    margin: 0 6%;
+    background-color: #E0E1D1;
+    border-bottom-left-radius: 9999px;
+    border-bottom-right-radius: 9999px;
+    display: flex;
+    align-items: center;
+    overflow: hidden; 
+    padding-top: 11vh;
+ }
+
+ #page5Left{
+    height: 100%;
+    width: 100%;
+    padding-left: 9vw;
+ }
+
+ #page5Left h1{
+    font-family: austinLight;
+    font-size: 6.5vw;
+    font-weight: 300;
+ }
+
+ #page5Left h1 span{
+    font-family: austinItalic
+ }
+
+ #page5Right{
+    height: 100%;
+    width: 100%;
+    padding-left: 5vw;
+    padding-top: 1.8vh;
+    position: relative;
+ }
+
+ .page5RightElem{
+    margin-bottom: 8vh;
+    width: 60%;
+ }
+
+ .page5RightElem img{
+    width: 200px;
+    height: 250px;
+    position: absolute;
+    opacity: 0;
+ }
+
+.page5RightElem h1{
+    font-family: austinLight;
+    font-size: 2.7vw;
+    font-weight: 300;
+    margin-bottom: 16px;
+ }
+
+.page5RightElem h2{
+    font-family: gilroy;
+    font-size: 1.3vw;
+    font-weight: 300;
+    display: inline;
+ }
+
+ .page5RightElem h2:nth-child(2){
+    background-color: black;
+    color: white;
+    margin-right: 12px;
+    padding: 7px 12px;
+    border-radius: 25px;
+ }
+
+ .page5RightElem h2:nth-child(3){
+    color: black;
+    padding: 7px 12px;
+    border: 2px solid black;
+    border-radius: 25px;
+ }
