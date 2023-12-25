@@ -53,7 +53,7 @@ body{
     padding: 0 1vw;
 }
 
-#navPart1{
+/* #navPart1{
     width: 15vw;
     height: 7vh;
     background-color: #F5F5EB;
@@ -73,7 +73,45 @@ body{
 
 #navPart1 img{
     margin-right: 0.5vw;
+} */
+
+#navPart1{
+    width: 17vw;
+    height: 7vh;
+    background-color: #F5F5EB;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all ease 0.5s;
+    /* overflow: hidden; */
 }
+
+#navPart1 img{
+    margin-left: -2.7vw;
+    margin-right: 0.5vw;
+}
+
+#navPart1 #navPart1navInner{
+    height: 15vh;
+    margin-top: 13vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+#navPart1 #navPart1navInner h3{
+    font-weight: 300;
+}
+
+
+
+
+
+
+
+
 
 #navPart2{
     border-radius: 50px;
@@ -144,6 +182,36 @@ body{
     margin-top:  -0.3vw;
 }
 
+@media (max-width:600px) {
+
+    #nav{
+        width: 100vw;
+        margin-top: -1vh;
+    }
+
+    #navPart1{
+        background-color: transparent;
+        padding-left: 8vw;
+    }
+    
+    #navPart1 #navPart1navInner{
+       display: none;
+    }
+    
+    
+    #navPart2 h4{
+        display: none;
+    }
+    
+    #navPart2 button{
+        font-weight: 100;
+        font-size: 5vw;
+        padding-left: 5vw;
+        padding-right: 5vw;
+        margin-right: 3vw;
+    }
+}
+
 
 /* Page 1 Started */
 #page1{
@@ -179,17 +247,6 @@ body{
     z-index: 9999;
 }
 
-#platform h1{
-    font-family: austinLight;
-    font-size: 13vw;
-    line-height: 11vw;
-    font-weight: 100;
-    position: absolute;
-    left: 53.5vw;
-    top: 43vh;
-    transform: translate(-50%,-50%);
-    z-index: 9999;
-}
 
 #page1 #gola{
     position: absolute;
@@ -225,6 +282,13 @@ body{
     width: 53%;
     font-weight: 100;
     margin-left: -4%;
+    font-family: austinLight;
+    font-weight: 100;
+    position: absolute;
+    left: 53.5vw;
+    top: 43vh;
+    transform: translate(-50%,-50%);
+    z-index: 9999;
 }
 
 #page1 #platform h1 span{
@@ -253,6 +317,63 @@ body{
     width: 100%;
     bottom: 8%;
     background-color: #7AA74A;
+}
+
+@media (max-width:600px) {
+    #page1{
+        width: 100vw;
+     }
+     
+     #page1>h1{
+         font-family: austinLight;
+         font-size: 18vw;
+         line-height: 8vw;
+         left: 30vw;
+         top: 43vh;
+     }
+     
+     #page1>h1:nth-child(2){
+         font-family: austinLight;
+         font-size: 18vw;
+         white-space: nowrap;
+         left: 52vw;
+         top: 52vh;
+     }
+     
+    
+     
+     #page1 #gola{
+         position: absolute;
+         top: 58vh;
+         left: 22%;
+         height: 55vw;
+         width:55vw;
+     }
+     
+     #page1 #platform{
+          width:90vw;
+          height:44vw;
+          margin-top: 83vh;
+     }
+
+     #page1 #platform h1{
+        font-family: austinLight;
+        font-size: 8vw;
+        letter-spacing: 0.01vw;
+        line-height: 8vw;
+        text-align: center;
+        width: 74%;
+        font-weight: 100;
+        margin-left: -4%;
+        font-family: austinLight;
+        font-weight: 100;
+        position: absolute;
+        left: 50vw;
+        top: 10vh;
+        transform: translate(-50%,-50%);
+        z-index: 9999;
+    }
+
 }
 
 
@@ -353,6 +474,75 @@ body{
     margin-top: -8%;
  }
 
+ @media (max-width:600px) {
+
+    #page2{
+        width: 100vw;
+     }
+    
+     #page2-in{
+        width: 84vw;
+        height: 104vh;
+        margin-top: -20vh;
+     }
+    
+     #page2-in h1{
+        margin-top: 10vh;
+        font-size: 9.8vw;
+        white-space: nowrap;
+        margin-left: -5vw;
+     }
+    
+     #page2-in h1 span{
+        font-style: normal;
+     }
+    
+     #page2-in-elems{
+        display: initial;
+     }
+    
+     #page2-in-elems h2{
+        font-family: austinLight;
+        display: inline-block;
+        font-weight: 100;
+        font-size: 4.8vw;
+        padding: 1vh 4vw;
+        margin-left: -5vw;
+     }
+    
+     #page2-in-elems p{
+        width: 75vw;
+        font-size: 3.9vw;
+        margin-left: -5vw;
+        margin-top: 3vh;
+     }
+    
+    
+     #snake-circle{
+        height: 40vh;
+        width: 40vh;
+        bottom: -55%;
+     }
+    
+     #snake-circle video{
+        height: 70vh;
+        width: 45vw;
+        margin-top: -70%;
+        margin-left: -35%;
+     }
+    
+     #snake-circle img{
+        height: 16vh;
+        width: 40vw;
+        top:-17%;
+     }
+    
+     .snake__snake *{
+        font-family: austinLight;
+        font-size: 1vw;
+     }
+ }
+
 
 
  /* Page 3 Started */
@@ -385,6 +575,14 @@ body{
     transition: all ease 0.4s;
     z-index: 9;
     cursor: pointer;
+}
+
+.page3ElemCommonClass>i{
+    font-size: 3vw;
+    color: floralwhite;
+    background-color: #51733F;
+    border-radius: 25px;
+    display: none;
 }
 
 
@@ -520,6 +718,72 @@ body{
     transform: translateY(3px);
  }
 
+ @media (max-width:600px) {
+    #page3{
+        width: 100vw;
+        min-height: 260vh;
+        padding-top: 17vh;
+        /* padding-bottom: 10vh; */
+     }
+    
+     #page3>h2{
+        font-size: 7vw;
+     }
+
+     .page3ElemCommonClass>i{
+        font-size: 10vw;
+        display: initial;
+        position: absolute;
+        display: none;
+    }
+
+    
+     .page3ElemCommonClass>h1{
+        display: none;
+     }
+    
+     .page3ElemCommonClass>h3{
+        display: none;
+     }
+    
+     .page3ElemCommonClass>img{
+        width: 70vw;
+        height: 70vw;
+        scale: 1;
+        position: absolute;
+     }
+    
+    #page3Elem1>img {
+        margin-left: -10;
+        margin-top: 15%;
+    }
+    
+    #page3Elem2>img{
+        margin-left: 34%;
+        margin-top: 80%;
+     }
+    
+     #page3Elems #page3Elem3>img{
+        margin-left: -30%;
+        margin-top: 130%;
+     }
+    
+     #page3Elems #page3Elem4>img{
+        margin-left: 34%;
+        margin-top: 180%;
+     }
+    
+     #page3Elems #page3Elem5>img{
+        margin-left: -30%;
+        margin-top: 230%;
+     }
+    
+     #page3Elems #page3Elem6>img{
+        margin-left: 34%;
+        margin-top: 280%;
+     }
+ }
+
 
 
   /* Page 4 Started */
@@ -608,6 +872,100 @@ body{
     border-radius: 50%;
     top:38%;
     left:43%;
+    transition: all ease-in 0.7s;
+ }
+
+ @media (max-width:600px) {
+    #page4{
+        width: 100vw;
+        min-height: 130vh;
+        padding-left: 8vw;
+        padding-right: 8vw;
+        padding-top: 15vh;
+     }
+    
+     #page4 h1{
+        font-family: austinItalic;
+        font-size: 14.2vw;
+        font-weight: 200;
+        line-height: 12vw;
+     }
+    
+     #page4>p{
+        display: initial;
+        font-size: 4vw;
+     }
+
+     #page4 #whiteCircle{
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+        top:31%;
+        left:40%;
+     }
+
+     .page4Elems{
+        border-bottom: 1px solid black;
+     }
+    
+     .page4Elems h2{
+        font-weight: 400;
+        font-size: 4.3vw;
+     }
+    
+     .page4Elems h3{
+        font-size: 5vw;
+        font-weight: 500;
+        margin-top: 4vh;
+     }
+    
+     #page4Elem1{
+        width:90%;
+        position: absolute;
+        left: 5%;
+        top:54%;
+        rotate:0deg;
+     }
+    
+     #page4Elem2{
+        width:90%;
+        position: absolute;
+        left: 5%;
+        rotate:0deg;
+        top:66%;
+     }
+    
+     #page4Elem3{
+        width:90%;
+        position: absolute;
+        left: 5%;
+        top:81%;
+        rotate:0deg;
+     }
+    
+     #page4Elem1 img{
+        top:0;
+        width: 70px;
+        height: 70px;
+        position: absolute;
+        right:0;
+     }
+    
+     #page4Elem2 img{
+        top:0;
+        width: 70px;
+        height: 70px;
+        position: absolute;
+        right:0;
+     }
+    
+     #page4Elem3 img{
+        top:0;
+        width: 70px;
+        height: 70px;
+        position: absolute;
+        right:0;
+     }
  }
 
   /* Page 5 Started */
@@ -694,6 +1052,61 @@ body{
     padding: 7px 12px;
     border: 2px solid black;
     border-radius: 25px;
+ }
+
+ @media (max-width:600px) {
+    #page5{
+        width: 100vw;
+        min-height: 150vh;
+     }
+    
+     #page5-background{
+        height: 150vh;
+        flex-direction: column;
+     }
+    
+     #page5Left h1{
+        font-family: austinLight;
+        font-size: 12.5vw;
+        font-weight: 300;
+        margin-top: -8vh;
+        
+        margin-left: -5vw;
+     }
+    
+     #page5Right{
+        height: 100%;
+        width: 100%;
+        padding-left: 5vw;
+        margin-top: -120vh;
+        position: relative;
+     }
+    
+     .page5RightElem{
+        margin-bottom: 8vh;
+        width: 70%;
+     }
+    
+     .page5RightElem img{
+        width: 200px;
+        height: 250px;
+        position: absolute;
+        opacity: 0;
+     }
+    
+    .page5RightElem h1{
+        font-family: austinLight;
+        font-size: 8vw;
+        font-weight: 300;
+        margin-bottom: 16px;
+     }
+    
+    .page5RightElem h2{
+        font-family: gilroy;
+        font-size: 3.8vw;
+        font-weight: 300;
+        display: inline;
+     }
  }
 
 /* Page 6 Started */
@@ -797,4 +1210,62 @@ body{
 #page6 #smallCircle6{
     top: 60%;
     left: 78%;
+}
+
+@media (max-width:600px) {
+    #page6{
+        width: 100vw;
+        min-height: 100vh;
+        position: relative; 
+        overflow: hidden; 
+    }
+    
+    #page6 h1{
+        display: none;
+    }
+    
+    #page6 #bigCircle{
+        height: 200px;
+        width: 200px;
+        left: 29.6%;
+        top:9%;
+    }
+
+    #page6 #bigCircle:hover{
+        filter: invert(0.1);
+    }
+    
+    #page6 .smallCircles{
+        height: 140px;
+        width: 140px;
+    }
+
+    #page6 #smallCircle1{
+        top: 29.3%;
+        left: 10%;
+    }
+    
+    #page6 #smallCircle2{
+        top: 47%;
+        left: 19.1%;
+    }
+    
+    #page6 #smallCircle3{
+        top: 61.7%;
+    }
+    
+    #page6 #smallCircle4{
+        top: 34%;
+        left: 50%;
+    }
+    
+    #page6 #smallCircle5{
+        top:50.7%;
+        left: 64%;
+    }
+    
+    #page6 #smallCircle6{
+        top: 67.4%;
+        left: 50%;
+    }
 }
